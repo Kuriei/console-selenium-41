@@ -4,7 +4,7 @@ Professor: Daniel Henrique Matos de Paiva
 
 Integrantes:
 Yasmin Aparecida Souza de Paula - RA: 32612974
-Cauã Perreiras Vieira - RA: 32516918
+Cauã Parreiras Vieira - RA: 32516918
 
 Tecnologias:
 C#
