@@ -1,0 +1,18 @@
+﻿ATIVIDADE 41 - GARANTIA DA QUALIDADE DE SOFTWARE
+
+Professor: Daniel Henrique Matos de Paiva
+
+Integrantes:
+Yasmin Aparecida Souza de Paula - RA: 32612974
+Cauã Perreiras Vieira - RA: 32516918
+
+Tecnologias:
+C#
+.NET 10
+MSTest
+Selenium WebDriver
+
+Exercícios:
+1. Cadastro completo
+2. Dropdown e Datalist
+3. Checkboxes, Radio e Color Picker

@@ -1,0 +1,27 @@
+Abra o PowerShell dentro da pasta console-selenium-41.
+
+1. Crie a solution e adicione os projetos:
+dotnet new sln -n ConsoleSelenium41
+dotnet sln add ConsoleSelenium/ConsoleSelenium.csproj
+dotnet sln add ConsoleSelenium.Tests/ConsoleSelenium.Tests.csproj
+
+2. Execute os testes:
+dotnet restore
+dotnet test
+
+3. Faça os commits:
+git init
+git add .gitignore README.md ConsoleSelenium ConsoleSelenium.Tests/*.csproj
+git commit -m "feat: cria estrutura inicial do projeto"
+git add ConsoleSelenium.Tests/WebFormularioDesafioTest.cs
+git commit -m "test: adiciona testes do formulario web"
+git add COMANDOS_GITHUB.txt ConsoleSelenium41.slnx
+git commit -m "docs: adiciona instrucoes de execucao"
+
+4. No GitHub, crie um repositorio PUBLICO chamado console-selenium-41 (sem README automatico).
+Depois execute, substituindo SEU_USUARIO:
+git branch -M main
+git remote add origin https://github.com/SEU_USUARIO/console-selenium-41.git
+git push -u origin main
+
+Se o arquivo da solution tiver extensao .sln em vez de .slnx, use esse nome no comando git add.
