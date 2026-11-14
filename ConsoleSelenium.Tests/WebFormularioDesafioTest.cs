@@ -40,7 +40,7 @@ public class WebFormularioDesafioTest
         Assert.AreEqual("Readonly input", campo.GetAttribute("value"));
 
         driver.FindElement(By.CssSelector("button[type='submit']")).Click();
-        Console.WriteLine("URL atual: " + driver.Url); Console.WriteLine("Titulo: " + driver.Title); Console.WriteLine("Conteudo: " + driver.FindElement(By.TagName("body")).Text); Assert.AreEqual("Received!", AguardarConfirmacao());
+        Assert.AreEqual("Received!", AguardarConfirmacao());
     }
 
     [TestMethod]
@@ -58,7 +58,7 @@ public class WebFormularioDesafioTest
             .SendKeys("Seattle");
 
         driver.FindElement(By.CssSelector("button[type='submit']")).Click();
-        Console.WriteLine("URL atual: " + driver.Url); Console.WriteLine("Titulo: " + driver.Title); Console.WriteLine("Conteudo: " + driver.FindElement(By.TagName("body")).Text); Assert.AreEqual("Received!", AguardarConfirmacao());
+        Assert.AreEqual("Received!", AguardarConfirmacao());
     }
 
     [TestMethod]
@@ -86,7 +86,7 @@ public class WebFormularioDesafioTest
         Assert.AreEqual("#ff0000", cor.GetAttribute("value"));
 
         driver.FindElement(By.CssSelector("button[type='submit']")).Click();
-        Console.WriteLine("URL atual: " + driver.Url); Console.WriteLine("Titulo: " + driver.Title); Console.WriteLine("Conteudo: " + driver.FindElement(By.TagName("body")).Text); Assert.AreEqual("Received!", AguardarConfirmacao());
+        Assert.AreEqual("Received!", AguardarConfirmacao());
     }
 
     private string AguardarConfirmacao()
@@ -108,11 +108,5 @@ public class WebFormularioDesafioTest
                 ? "Received!"
                 : null;
         })!;
-    }}
-
-
-
-
-
-
-
+    }
+}
